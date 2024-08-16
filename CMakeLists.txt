@@ -7,12 +7,12 @@ find_package(catkin REQUIRED COMPONENTS
         nav_msgs
         visualization_msgs
         tf
-        cv_bridge
+        cv_bridge_1
         )
 
 find_package(Eigen3 REQUIRED)
 find_package(PCL 1.7 REQUIRED)
-find_package(OpenCV REQUIRED)
+find_package(OpenCV 4.7.0 EXACT REQUIRED)
 set(Eigen3_INCLUDE_DIRS ${EIGEN3_INCLUDE_DIR})
 
 catkin_package(
